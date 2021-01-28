@@ -4,7 +4,12 @@ default:
 build-job:
   stage: build
   script:
-    - gradlew assemble
+    - ./gradlew assemble
+
+test-job:
+  stage: test
+  script:
+    - echo "Test"
 
 deploy-job:
   stage: deploy
