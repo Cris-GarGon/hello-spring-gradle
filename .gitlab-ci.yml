@@ -5,7 +5,6 @@ build-job:
   stage: build
   script:
     - ./gradlew assemble
-
   artifacts:
     when: always
     paths:
